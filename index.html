@@ -15,22 +15,76 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    /* Basic styling for header, logo, and menu */
+    /* Global Styles */
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { display: flex; align-items: center; justify-content: space-between; padding: 20px; background: #004080; color: white; }
-    header img { height: 50px; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; }
-    nav ul li { display: inline; }
-    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-    nav ul li a:hover { text-decoration: underline; }
-    main { padding: 20px; }
-    section { margin-bottom: 40px; }
-    footer { background: #222; color: white; text-align: center; padding: 20px; }
+    a { text-decoration: none; }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background-color: #004080;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    header .logo img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700; /* gold hover effect */
+    }
+
+    /* Main Content */
+    main { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    section { margin-bottom: 60px; }
+    section h2 { color: #004080; }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- Header with Logo and Navigation -->
   <header>
     <div class="logo">
       <img src="logo.png" alt="GDK Global LLC Logo" />
@@ -44,6 +98,7 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
 
     <section id="about">
@@ -73,6 +128,7 @@
 
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 GDK Global LLC. All rights reserved.</p>
   </footer>

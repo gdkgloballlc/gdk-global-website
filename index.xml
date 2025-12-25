@@ -3,40 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GDK Global LLC</title>
+
+  <title>GDK Global LLC | Software & Technology Solutions</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="GDK Global LLC provides software development, cloud computing, IT consulting, and digital transformation services." />
+  <meta name="keywords" content="GDK Global LLC, software development, cloud computing, IT consulting, digital solutions" />
+  <meta name="author" content="GDK Global LLC" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <header>
     <h1>GDK Global LLC</h1>
-    <p>Software & Technology Solutions</p>
+    <p>Software &amp; Technology Solutions</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>
-      GDK Global LLC is a technology-focused company providing software,
-      cloud, and digital solutions. We aim to deliver scalable, efficient,
-      and modern technology services.
-    </p>
-  </section>
+  <main>
 
-  <section>
-    <h2>Services</h2>
-    <ul>
-      <li>Software Development</li>
-      <li>Cloud & Edge Computing</li>
-      <li>IT Consulting</li>
-      <li>Automation & Digital Solutions</li>
-    </ul>
-  </section>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        GDK Global LLC is a technology-focused company providing software,
+        cloud, and digital solutions. We help businesses build scalable,
+        efficient, and modern technology platforms.
+      </p>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: gdkgloballlc@gmail.com</p>
-    <p>Location: Prosper, Texas, USA</p>
-  </section>
+    <section>
+      <h2>Services</h2>
+      <ul>
+        <li>Software Development</li>
+        <li>Cloud &amp; Edge Computing</li>
+        <li>IT Consulting</li>
+        <li>Automation &amp; Digital Solutions</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:gdkgloballlc@gmail.com">gdkgloballlc@gmail.com</a></p>
+      <p>Location: Prosper, Texas, USA</p>
+    </section>
+
+  </main>
 
   <footer>
     <p>© 2025 GDK Global LLC. All rights reserved.</p>

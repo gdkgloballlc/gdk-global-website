@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>GDK Global LLC | Software &amp; Technology Solutions</title>
+  <title>GDK Global LLC | Software & Technology Solutions</title>
 
   <!-- SEO Meta -->
   <meta name="description" content="GDK Global LLC provides software development, cloud computing, IT consulting, and digital transformation services." />
@@ -13,18 +13,40 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Basic styling for header, logo, and menu */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 20px; background: #004080; color: white; }
+    header img { height: 50px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; }
+    nav ul li { display: inline; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    nav ul li a:hover { text-decoration: underline; }
+    main { padding: 20px; }
+    section { margin-bottom: 40px; }
+    footer { background: #222; color: white; text-align: center; padding: 20px; }
+  </style>
 </head>
 
 <body>
 
   <header>
-    <h1>GDK Global LLC</h1>
-    <p>Software &amp; Technology Solutions</p>
+    <div class="logo">
+      <img src="logo.png" alt="GDK Global LLC Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
 
-    <section>
+    <section id="about">
       <h2>About Us</h2>
       <p>
         GDK Global LLC is a technology-focused company providing software,
@@ -33,17 +55,17 @@
       </p>
     </section>
 
-    <section>
+    <section id="services">
       <h2>Services</h2>
       <ul>
         <li>Software Development</li>
-        <li>Cloud &amp; Edge Computing</li>
+        <li>Cloud & Edge Computing</li>
         <li>IT Consulting</li>
-        <li>Automation &amp; Digital Solutions</li>
+        <li>Automation & Digital Solutions</li>
       </ul>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:gdkgloballlc@gmail.com">gdkgloballlc@gmail.com</a></p>
       <p>Location: Prosper, Texas, USA</p>
@@ -57,4 +79,3 @@
 
 </body>
 </html>
-

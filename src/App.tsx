@@ -1,20 +1,25 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import Hero from './components/sections/Hero';
-import About from './components/sections/About';
-import Services from './components/sections/Services';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import ScrollToTop from './components/layout/ScrollToTop';
 
 function App() {
   return (
-    <div className="min-h-screen bg-bg-primary text-text-primary">
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <About />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <div className="min-h-screen bg-bg-primary text-text-primary">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

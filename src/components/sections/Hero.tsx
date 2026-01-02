@@ -1,7 +1,22 @@
+import { useState, useEffect } from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const heroImages = [
+    '/hero-visual.png',
+    '/hero-visual-backup.png'
+];
 
 export default function Hero() {
+    const [currentImage, setCurrentImage] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentImage((prev) => (prev + 1) % heroImages.length);
+        }, 5000);
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
             {/* Background Decor */}
@@ -30,12 +45,9 @@ export default function Hero() {
                         We engineer high-performance software and cloud infrastructure that scales with your business logic, not just your user base.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                    <div className="flex mb-12">
                         <a href="#contact" className="px-8 py-4 text-white bg-accent-primary rounded-xl font-semibold hover:bg-indigo-700 transition-all shadow-xl shadow-indigo-600/20 flex items-center justify-center gap-2">
                             Get Started <ArrowRight className="w-5 h-5" />
-                        </a>
-                        <a href="#work" className="px-8 py-4 text-text-primary bg-white border border-gray-200 rounded-xl font-semibold hover:border-gray-300 hover:bg-gray-50 transition-all flex items-center justify-center">
-                            View Case Studies
                         </a>
                     </div>
 
@@ -58,14 +70,21 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="relative"
                 >
-                    <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-2 border border-blue-100 backdrop-blur-sm bg-white/60">
-                        <img
-                            src="/hero-visual.png"
-                            alt="Digital Data Flow"
-                            className="rounded-xl w-full h-full object-cover mix-blend-multiply"
-                        />
-
-
+                    <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-2 border border-blue-100 backdrop-blur-sm bg-white/60 aspect-[4/3] sm:aspect-square lg:aspect-[4/3]">
+                        <div className="relative w-full h-full overflow-hidden rounded-xl">
+                            <AnimatePresence mode="popLayout">
+                                <motion.img
+                                    key={currentImage}
+                                    src={heroImages[currentImage]}
+                                    alt="Digital Data Flow"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 1 }}
+                                    className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
+                                />
+                            </AnimatePresence>
+                        </div>
                     </div>
                 </motion.div>
             </div>

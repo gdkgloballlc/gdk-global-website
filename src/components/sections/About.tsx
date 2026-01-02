@@ -20,11 +20,7 @@ export default function About() {
                         <p className="text-xl text-text-secondary leading-relaxed mb-8">
                             We are not just developers; we are strategic partners in your digital journey. We combine technical expertise with deep industry knowledge to deliver solutions that matter.
                         </p>
-                        <div className="flex gap-4">
-                            <img src="https://via.placeholder.com/100x40?text=Logo+1" alt="Client Logo" className="opacity-40 grayscale hover:grayscale-0 transition-all" />
-                            <img src="https://via.placeholder.com/100x40?text=Logo+2" alt="Client Logo" className="opacity-40 grayscale hover:grayscale-0 transition-all" />
-                            <img src="https://via.placeholder.com/100x40?text=Logo+3" alt="Client Logo" className="opacity-40 grayscale hover:grayscale-0 transition-all" />
-                        </div>
+
                     </div>
 
                     <div className="grid grid-cols-2 gap-8">

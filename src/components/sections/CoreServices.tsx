@@ -1,51 +1,48 @@
-import { Code, Cloud, Lightbulb, Zap, ArrowUpRight } from 'lucide-react';
+import { Code, Cloud, Lightbulb, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
     {
         icon: <Code className="w-8 h-8 text-blue-600" />,
-        title: 'Custom Software Engineering',
+        title: 'Software Engineering',
         description: 'We build robust, scalable applications that drive business value. From web platforms to mobile apps.',
         className: 'bg-gradient-to-br from-white to-blue-50/50',
-        image: '/images/services/custom-software.png'
+        image: '/images/services/custom-software-new.png'
     },
     {
         icon: <Cloud className="w-8 h-8 text-indigo-600" />,
         title: 'Cloud Architecture',
         description: 'Native cloud solutions ensuring 99.9% availability and infinite scalability.',
         className: 'bg-white',
-        image: '/images/services/cloud-arch.png'
+        image: '/images/services/cloud-arch-new.png'
     },
     {
         icon: <Lightbulb className="w-8 h-8 text-amber-500" />,
-        title: 'Strategic Consulting',
+        title: 'Consulting',
         description: 'Technology roadmaps aligned with business goals and digital transformation.',
         className: 'bg-white',
-        image: '/images/services/consulting-transparent.png'
+        image: '/images/services/consulting-new.png'
     },
     {
         icon: <Zap className="w-8 h-8 text-violet-600" />,
-        title: 'AI & Automation',
+        title: 'AI Solutions',
         description: 'Intelligent workflows that reduce cognitive load and operation costs.',
         className: 'bg-gradient-to-br from-white to-violet-50/50',
-        image: '/images/services/ai-automation-transparent.png'
+        image: '/images/services/ai-automation-new.png'
     }
 ];
 
-export default function Services() {
+export default function CoreServices() {
     return (
-        <section id="capabilities" className="py-24 bg-bg-secondary">
+        <section id="services" className="py-24 bg-white">
             <div className="container">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16">
                     <div className="max-w-xl">
-                        <span className="text-accent-primary font-semibold tracking-wider uppercase text-sm mb-4 block">Our Capabilities</span>
+                        <span className="text-accent-primary font-semibold tracking-wider uppercase text-sm mb-4 block">Our Services</span>
                         <h2 className="text-4xl md:text-5xl font-heading font-bold text-text-primary leading-tight">
-                            Engineering for Scale.
+                            Comprehensive<br />Technology Solutions.
                         </h2>
                     </div>
-                    <a href="#work" className="hidden md:flex items-center gap-2 font-semibold text-text-primary hover:text-accent-primary transition-colors">
-                        View all services <ArrowUpRight className="w-5 h-5" />
-                    </a>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -88,12 +85,6 @@ export default function Services() {
                             </div>
                         </motion.div>
                     ))}
-                </div>
-
-                <div className="mt-8 text-center md:hidden">
-                    <a href="#work" className="flex items-center justify-center gap-2 font-semibold text-text-primary">
-                        View all services <ArrowUpRight className="w-5 h-5" />
-                    </a>
                 </div>
             </div>
         </section>

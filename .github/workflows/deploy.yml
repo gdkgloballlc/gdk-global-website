@@ -25,6 +25,9 @@ jobs:
           VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
 
+      - name: Copy index.html to 404.html
+        run: cp dist/index.html dist/404.html
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:

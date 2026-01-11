@@ -31,7 +31,7 @@ export default function Navbar() {
           <Link to="/about" className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
             Company
           </Link>
-          <a href="mailto:info@gdkglobal.net" className="px-5 py-2.5 text-sm font-semibold text-white bg-accent-primary rounded-lg hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20">
+          <a href="#contact" className="px-5 py-2.5 text-sm font-semibold text-white bg-accent-primary rounded-lg hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/20">
             Contact Us
           </a>
         </div>

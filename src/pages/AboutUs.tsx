@@ -1,4 +1,5 @@
 import aboutHero from '../assets/images/about-hero.png';
+import Contact from '../components/sections/Contact';
 
 export default function AboutUs() {
     return (
@@ -39,6 +40,8 @@ export default function AboutUs() {
                     </div>
                 </div>
             </section>
+
+            <Contact />
         </div>
     );
 }

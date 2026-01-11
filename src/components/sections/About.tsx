@@ -13,12 +13,12 @@ export default function About() {
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <span className="text-accent-primary font-semibold tracking-wider uppercase text-sm mb-4 block">About GDK</span>
+                        <span className="text-accent-primary font-semibold tracking-wider uppercase text-sm mb-4 block">About GDK Global</span>
                         <h2 className="text-4xl md:text-5xl font-heading font-bold text-text-primary leading-tight mb-6">
                             Trusted by industry leaders.
                         </h2>
                         <p className="text-xl text-text-secondary leading-relaxed mb-8">
-                            We are not just developers; we are strategic partners in your digital journey. We combine technical expertise with deep industry knowledge to deliver solutions that matter.
+                            We are more than technology providers; we are your strategic partners in the digital era. By combining advanced software solutions, cloud expertise, and deep industry insight, we deliver scalable, innovative solutions that drive measurable business results. From optimizing operations to enabling growth through digital transformation, we empower businesses to stay ahead in a constantly evolving technological landscape.
                         </p>
 
                     </div>

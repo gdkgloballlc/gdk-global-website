@@ -3,8 +3,8 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const heroImages = [
-    '/hero-visual.png',
-    '/hero-visual-backup.png'
+    '/hero-visual-backup.png',
+    '/hero-visual.png'
 ];
 
 export default function Hero() {

@@ -1,10 +1,10 @@
-import { Code, Cloud, Lightbulb, Zap, ArrowUpRight } from 'lucide-react';
+import { Code, Cloud, Lightbulb, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
     {
         icon: <Code className="w-8 h-8 text-blue-600" />,
-        title: 'Custom Software Engineering',
+        title: 'Software Engineering',
         description: 'We build robust, scalable applications that drive business value. From web platforms to mobile apps.',
         className: 'bg-gradient-to-br from-white to-blue-50/50',
         image: '/images/services/custom-software.png'
@@ -21,11 +21,11 @@ const services = [
         title: 'Strategic Consulting',
         description: 'Technology roadmaps aligned with business goals and digital transformation.',
         className: 'bg-white',
-        image: '/images/services/consulting-transparent.png'
+        image: '/images/services/consulting-new.png'
     },
     {
         icon: <Zap className="w-8 h-8 text-violet-600" />,
-        title: 'AI & Automation',
+        title: 'AI Solutions',
         description: 'Intelligent workflows that reduce cognitive load and operation costs.',
         className: 'bg-gradient-to-br from-white to-violet-50/50',
         image: '/images/services/ai-automation-transparent.png'
@@ -43,9 +43,7 @@ export default function Services() {
                             Engineering for Scale.
                         </h2>
                     </div>
-                    <a href="#work" className="hidden md:flex items-center gap-2 font-semibold text-text-primary hover:text-accent-primary transition-colors">
-                        View all services <ArrowUpRight className="w-5 h-5" />
-                    </a>
+
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -90,11 +88,7 @@ export default function Services() {
                     ))}
                 </div>
 
-                <div className="mt-8 text-center md:hidden">
-                    <a href="#work" className="flex items-center justify-center gap-2 font-semibold text-text-primary">
-                        View all services <ArrowUpRight className="w-5 h-5" />
-                    </a>
-                </div>
+
             </div>
         </section>
     );

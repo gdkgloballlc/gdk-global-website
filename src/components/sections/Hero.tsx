@@ -30,10 +30,7 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-accent-primary text-xs font-semibold uppercase tracking-wider mb-6">
-                        <span className="w-2 h-2 rounded-full bg-accent-primary animate-pulse" />
-                        Available for new partnerships
-                    </div>
+
 
                     <h1 className="text-5xl lg:text-7xl font-bold font-heading leading-[1.1] mb-8 text-text-primary tracking-tight">
                         Building the <br />
